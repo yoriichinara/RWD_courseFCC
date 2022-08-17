@@ -1,0 +1,59 @@
+h1 {
+    text-align: center;
+    /**margin: 5% 50% 5% 30px;**/
+}
+
+body {
+    margin: 2% 55% 2% 5%;
+    background-image: url("ronaldinho.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input.data {
+    width: 100%;
+    margin: 3% 0%; 
+}
+
+select {
+    width: 100%;
+    margin-top: 10px;
+}
+
+textarea {
+    width: 100%;
+}
+
+@media (min-width: 1200px) {
+    body {
+        background-color: rgb(15, 15, 15);
+    }
+}
+
+@media (max-width: 1200px) {
+    body {
+        background-color: rgb(15, 15, 15);
+    }
+}
+
+
+@media (max-width: 992px) {
+    body {
+        background-color: rgb(15, 12, 12); 
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 12% 12%;
+        background-color: rgb(26, 29, 26);
+        background-image: url("ronaldinho2.jpg"); 
+        color: #ffffff;
+    }
+}

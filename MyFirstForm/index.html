@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>First Form</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1 id="title">My First Form</h1>
+    <p id="description">¡Bienvenido a mi primer formulario, gracias por hacer parte de mi proceso!</p>
+    <form id="survey-form">
+        <label for="name" id="name-label"> Nombre </label>
+        <div>
+            <input class="data" id="name" type="text" placeholder="Inserta tu Nombre" required>
+        </div>
+        <label for="email" id="email-label"> Correo Electronico </label>
+        <div class="data">
+            <input class="data" type="email" id="email" placeholder="Inserta tu e-mail" required>
+        </div>
+        <div>
+            <label for="number" id="number-label"> Edad </label>
+            <input class="data" id="number" type="number" placeholder="Edad" min="18" max="99"> 
+        </div>
+        <div>
+            <label for="dropdown" id="dropdown-label">¿Cual es tu liga de futbol favorita?</label> <br>
+            <select id="dropdown"> 
+                <option disable selected value> Seleccionar </option>
+                <option value="england"> Premier League </option>
+                <option value="spain"> LaLiga </option>
+                <option value="italy"> Serie A </option>
+                <option value="germany"> Bundesliga </option>
+            </select>
+        </div>
+        <div>
+            <p>¿Que goles te gustan mas?</p>
+            <label><input type="radio" name="buengusto" value="freekick">Tiro Libre</label> <br>
+            <label><input type="radio" name="buengusto" value="tktk"> Tiki-Taka</label> <br>
+            <label><input type="radio" name="buengusto" value="volea">Patada Voladora</label> <br>
+            <label><input type="radio" name="buengusto" value="headgoal">Palomita / Cabezazo</label> 
+        </div>
+        <div>
+            <p>¿Cuales de los siguientes equipos son de tu interés?</p>
+            <label><input type="checkbox" name="teamfav" value="ManCit"> Manchester City</label> <br>
+            <label><input type="checkbox" name="teamfav" value="Liv"> Liverpool</label> <br>
+            <label><input type="checkbox" name="teamfav" value="Bar"> FC Barcelona</label> <br>
+            <label><input type="checkbox" name="teamfav" value="AM"> Atletico de Madrid</label> <br>
+        </div>
+        <div>
+            <p>Buzón de sugerencias</p>
+            <textarea id="buzonsug" cols="" rows="3" placeholder="Comentarios"></textarea>
+        </div>
+        <button type="submit" id="submit"> Enviar </button>
+    </form>
+</body>
+<footer> <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> </footer>
+</html>

@@ -1,0 +1,256 @@
+#header-img {
+    display: none; 
+}
+
+img.encab {
+    width: 20%;
+    height: 20%;
+    vertical-align: top;
+}
+
+body {
+    background-color: whitesmoke;
+    margin: 1em 1em;
+
+}
+
+header {
+    width: 100%;
+    font-size: 16px;
+    color: green;    
+    position: fixed; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(#c3fab8, whitesmoke);
+    left: 0;
+    top: 0;
+    padding-top: 1%;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.container {
+    text-align: center;
+    margin-top: 12em;
+}
+
+input.boton {
+    background-color: yellow;
+    cursor: pointer;
+}
+
+input.boton2 {
+    background-color: yellow;
+    width: 9em;
+    height: 3em;
+}
+
+section {
+    text-align: justify;
+}
+
+#character {
+    display: flex;
+    flex-direction: row;
+    margin: 5% 30%; 
+}
+
+.char {
+    display: flex;
+    flex-direction: column;
+}
+
+.desc {
+    margin: 2em 0em 2em 4em; 
+    display: flex; 
+    flex-direction: column;
+}
+
+.desc > h3 {
+    margin: 0 0;
+}
+
+i {
+    font-size: 6em;
+    color: #4aad36 ;
+    margin: 0.2em 0em;
+}
+
+#uses {
+    text-align: center;
+}
+
+a.nav-link {
+    color: green;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    margin: 0px 10px;
+    font-size: 1.2em;
+}
+
+nav > ul {
+    display: flex; 
+    align-items: center;    
+}
+
+nav {
+    align-items: center;
+    text-align: center;
+}
+
+#prices {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5% 10%;
+    justify-content: space-between;
+}
+
+.producto {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 20em;
+    height: 20em;
+    border: 1px solid green;
+    text-align: center;
+}
+
+.producto > h3 {
+    text-align: center;
+    color: green;
+    background-color: #c3fab8;
+    margin: 0% 0%;
+    padding: 1em 1em;
+    min-height: 20px;
+} 
+
+.producto > h4 {
+    font-size: 1.5em;
+    margin: 13px 0em;
+}
+
+img.icono {
+    max-width: 33%;
+    margin-top: 1.5em;
+}   
+
+@media (max-width: 1080px) {
+    #prices {
+        height: 70em;
+    }
+}
+
+@media (max-width: 992px) { 
+    header {
+        flex-wrap: wrap;
+    }
+
+    li {
+        margin: 0 1em;
+    }
+
+    img.encab {
+        width: 18em;
+    }
+
+    #prices {
+        height: 60em;
+    }
+}
+
+@media (max-width: 768px) {
+    img.encab {
+        width: 18em;
+    }
+
+    header {
+        font-size: 14px;
+        flex-wrap: wrap;
+    }
+
+    body {
+        font-size: 14px;
+        margin: 1em;
+        margin-top: 15em;
+    }
+
+    #prices {
+        height: 70em;
+        align-items: space-around;
+        margin: 5em 16em;
+    }
+
+    #character {
+        margin: 1em 10em;
+    }
+}
+
+@media (max-width: 576px) {
+    #character {
+        width: 100%;
+        margin: 1em 0;
+    }   
+    
+    header {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0;
+        font-size: 14px;
+    }
+
+    .char {
+        margin: 0 0;
+        margin-left: 4em;
+        align-items: baseline;
+    }
+
+    .desc {
+        margin: 2em 4em;
+    }
+
+    nav > ul {
+        margin-right: 3em;
+    }
+
+    li {
+        margin: 0 1em;
+    }
+
+    .container {
+        margin: 0 0;
+    }
+
+    img.encab {
+        width: 60%;
+    }
+   
+    body {
+        margin-top: 20em;
+    }
+
+    #video {
+        width: 80%;
+        height: 12em;
+        margin: 0em 1em;
+        align-items: center;
+    }
+ 
+    #prices {
+        align-items: space-around;
+        height: 70em;
+        margin: 1em 5em;
+    }
+
+    ul {
+        margin: 0em 1em 0 0;
+    }
+}
